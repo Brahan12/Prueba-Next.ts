@@ -1,40 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Mi Aplicación Next.js
 
-## Getting Started
+Bienvenido a **Mi Aplicación Next.js**, un proyecto que utiliza **Next.js** con **TypeScript** para mostrar y gestionar publicaciones desde una API pública y localStorage. Este proyecto incluye funcionalidad para listar, editar y actualizar publicaciones, tanto desde una API pública como almacenadas localmente.
 
-First, run the development server:
+## Funcionalidades
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Listar publicaciones**: Muestra publicaciones traídas desde la API de JSONPlaceholder o almacenadas en `localStorage`.
+- **Editar publicaciones**: Permite editar publicaciones almacenadas localmente.
+- **Guardar publicaciones**: Las publicaciones se pueden guardar en `localStorage` para actualizaciones y persistencia.
+- **Responsive Design**: El diseño se adapta a diferentes tamaños de pantalla usando **Tailwind CSS**.
+- **Optimización de imágenes**: Las imágenes de las publicaciones se obtienen de la API JSONPlaceholder.
+  
+## Tecnologías Utilizadas
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Next.js**: Framework de React para aplicaciones web.
+- **TypeScript**: Tipado estático en JavaScript para mayor robustez.
+- **Tailwind CSS**: Framework CSS para diseño responsive.
+- **JSONPlaceholder**: API de ejemplo utilizada para obtener datos ficticios.
+- **localStorage**: Almacenamiento en el navegador para la persistencia de publicaciones.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Requisitos Previos
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Antes de comenzar, asegúrate de tener instalado lo siguiente:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+- **Node.js** (versión 12 o superior): [Descargar Node.js](https://nodejs.org/)
+- **Git**: [Descargar Git](https://git-scm.com/)
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Instalación
 
-## Learn More
+1. **Clona el repositorio** en tu máquina local:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   git clone https://github.com/tu-usuario/mi-aplicacion-nextjs.git
+   cd mi-aplicacion-nextjs
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+2. **Instala las dependencias del proyecto usando npm**
+   
+   npm install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Scripts
 
-## Deploy on Vercel
+    npm run dev: Inicia el servidor de desarrollo.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Uso de la Aplicación
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+    1. Página Principal
+    En la página principal (/), verás un botón que te redirige a la página de listado de publicaciones. La página está diseñada para ser visualmente atractiva y totalmente responsive.
+
+    2. Listado de Publicaciones
+    En la página /listado, se listan todas las publicaciones obtenidas desde la API pública y las que hayas almacenado en localStorage. Cada publicación puede ser editada haciendo clic en el botón "Editar" y eliminar con el botón "Eliminar".
+
+    3. Crear Publicaciones
+    En la página /nuevo se puede crear una nueva publicación agregando el titulo, contenido e imagen.
+
+    4. Actualizar Publicaciones en localStorage
+    Las publicaciones traídas desde la API se pueden almacenar en localStorage para persistencia local. Esto permite que puedas editar las publicaciones incluso después de recargar la página.
+
+    5. Editar Publicaciones
+    En la página /post/[id]/edit, puedes editar publicaciones. Si la publicación proviene de localStorage, puedes editarla y los cambios se guardarán localmente. Las publicaciones de la API no pueden ser actualizadas directamente, pero puedes guardarlas en localStorage y luego editarlas.
+
+    6. Borrar Publicaciones
+    En la página se puede eliminar/borrar la publicación creada o existente.
+
+
+## Diseño Responsive
+
+    La aplicación está diseñada para ser responsive utilizando Tailwind CSS. El contenido se adapta dinámicamente a diferentes tamaños de pantalla, proporcionando una experiencia óptima tanto en dispositivos móviles como en pantallas más grandes.
+
+## Autor
+
+    Este proyecto fue creado por Brahan Andres Acosta Galindo. Puedes contactarme en brahan.acostagal@gmail.com.
+# Prueba-Next.ts
